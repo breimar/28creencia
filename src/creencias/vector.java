@@ -104,4 +104,40 @@ public class vector {
         }
      return v[i];   
     }
+
+public String busqueda(int c){
+         int a = 0, a2, a3=num.length-1;
+         String cas="Datos No Encontrados";
+             while (a<= a3){
+                 a2 = (a+a3)/2;
+                 if (num[a2]==c)
+                 return v[a2];
+                 else if (num[a2]<c){
+                     a= a2+1;
+                     
+                 }
+                 else{
+                     a3=a2-1;
+                 }
+                 
+             }
+   return cas  ;
+ }
+ 
+ public String insercion(int m){
+      for (int i = 1; i < num.length; i++) 
+        {
+           int aux = num[i];
+           String text = v[i];
+            for (int j = i-1; j >=0 && num[j]>aux; j--)
+            {
+                num[j+1]=num[j];
+                num[j]=aux;
+                
+                v[j+1]=v[j];
+                v[j]=text;
+            }
+ }
+      return v[m];
+ }
 }
