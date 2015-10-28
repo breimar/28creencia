@@ -5,6 +5,8 @@
  */
 package creencias;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author LDS
@@ -55,6 +57,10 @@ public class nuevoformulario extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -112,7 +118,7 @@ public class nuevoformulario extends javax.swing.JFrame {
 
         jLabel27.setText("creencia 27");
 
-        jLabel28.setText("jLabel1");
+        jLabel28.setText("creencia 28");
 
         jButton1.setText("ordenar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -125,6 +131,20 @@ public class nuevoformulario extends javax.swing.JFrame {
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("insercion");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jButton4.setText("buscar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
             }
         });
 
@@ -176,10 +196,19 @@ public class nuevoformulario extends javax.swing.JFrame {
                             .addComponent(jLabel27)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(132, 132, 132)
-                        .addComponent(jButton1)
-                        .addGap(224, 224, 224)
-                        .addComponent(jButton2)))
-                .addContainerGap(271, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton2)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton4)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(232, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -240,10 +269,15 @@ public class nuevoformulario extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(jLabel28))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(105, 105, 105)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(jButton2)
+                    .addComponent(jButton3)
+                    .addComponent(jButton4)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41))
         );
 
@@ -428,6 +462,107 @@ public class nuevoformulario extends javax.swing.JFrame {
     
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        int i = 0;
+    String c; 
+    c =  a.insercion(i);
+    jLabel1.setText(c);
+    i = 1;
+    c = a.insercion(i); 
+    jLabel2.setText(c);
+    i = 2;
+    c = a.insercion(i);
+    jLabel3.setText(c);
+    i = 3; 
+    c = a.insercion(i); 
+    jLabel4.setText(c);
+    i = 4; 
+    c = a.insercion(i); 
+    jLabel5.setText(c);
+    i = 5; 
+    c = a.insercion(i); 
+    jLabel6.setText(c);
+    i = 6; 
+    c = a.insercion(i); 
+    jLabel7.setText(c);
+    i = 7; 
+    c = a.insercion(i); 
+    jLabel8.setText(c);
+    i = 8; 
+    c = a.insercion(i); 
+    jLabel9.setText(c);
+    i = 9; 
+    c = a.insercion(i); 
+    jLabel10.setText(c);
+    i = 10; 
+    c = a.insercion(i); 
+    jLabel11.setText(c);
+    i = 11; 
+    c = a.insercion(i); 
+    jLabel12.setText(c);
+    i = 12; 
+    c = a.insercion(i); 
+    jLabel13.setText(c);
+    i = 13; 
+    c = a.insercion(i); 
+    jLabel14.setText(c);
+    i = 14; 
+    c = a.insercion(i); 
+    jLabel15.setText(c);
+    i = 15; 
+    c = a.insercion(i); 
+    jLabel16.setText(c);
+    i = 16; 
+    c = a.insercion(i); 
+    jLabel17.setText(c);
+    i = 17; 
+    c = a.insercion(i); 
+    jLabel18.setText(c);
+    i = 18; 
+    c = a.insercion(i); 
+    jLabel19.setText(c);
+    i = 19; 
+    c = a.insercion(i); 
+    jLabel20.setText(c);
+    i = 20; 
+    c = a.insercion(i); 
+    jLabel21.setText(c);
+    i = 21; 
+    c = a.insercion(i); 
+    jLabel22.setText(c);
+    i = 22; 
+    c = a.insercion(i); 
+    jLabel23.setText(c);
+    i = 23; 
+    c = a.insercion(i); 
+    jLabel24.setText(c);
+    i = 24; 
+    c = a.insercion(i); 
+    jLabel25.setText(c);
+    i = 25; 
+    c = a.insercion(i); 
+    jLabel26.setText(c);
+    i = 26; 
+    c = a.insercion(i); 
+    jLabel27.setText(c);
+    i = 27; 
+    c = a.insercion(i); 
+    jLabel28.setText(c);
+    
+                           
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+       try{
+        int bus = Integer.parseInt(jTextField1.getText()); 
+        jLabel29.setText(a.busqueda(bus));
+       }
+       catch(Exception errordato)
+       {
+           JOptionPane.showInternalMessageDialog(null, "error de dato", "ERROR", WIDTH);
+       }
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -466,6 +601,8 @@ public class nuevoformulario extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -487,6 +624,7 @@ public class nuevoformulario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -494,5 +632,6 @@ public class nuevoformulario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
